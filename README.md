@@ -1,6 +1,6 @@
 # Web-Escape
 
-pages link
+link
 
 ## Project Name
 
@@ -22,8 +22,7 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
     "fields": {
       "name": "Chris",
       "time": 34920,
-      "rank": "1",
-      "date": "2021-07-13"
+      "rank": "1"
     }
   },
   
@@ -31,11 +30,17 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 
 ## Wireframes
 
-[Wireframe](https://wireframe.cc/9C0t7E)
+[Main Page](https://wireframe.cc/9C0t7E)
+
+[Puzzle View](https://wireframe.cc/rdemeV)
+
+[Leaderboards](https://wireframe.cc/dxLgbh)
+
+[Mobile Puzzle View](https://whimsical.com/web-escape-mobile-CDPziUMy2QeMwgYcuqMdof)
 
 ## Component Hierarchy
 
-[Component Hierarchy](https://wireframe.cc/2gj4Ut)
+[Component Hierarchy](https://whimsical.com/web-escape-NKty4e5QJpE4SWepNXVKNr)
 
 ### MVP/PostMVP
 
@@ -93,7 +98,7 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 | Add Win or Lose Screen                      |    H     |      2hrs      |     hrs      |    hrs     |
 | Work on Leaderboards Component              |    H     |      3hrs      |     hrs      |    hrs     |
 | Allow Player to Post on Leaderboards        |    H     |      2hrs      |     hrs      |    hrs     |
-| Finish Up Functionality + Debugging         |    H     |      2hrs      |     hrs      |    hrs     |
+| Finish Up Functionality + Debugging         |    H     |      4hrs      |     hrs      |    hrs     |
 | PMVP Styling                                |    H     |      5hrs      |     hrs      |    hrs     |
 | Final Review                                |    H     |      1hrs      |     hrs      |    hrs     |
 | Total                                       |    H     |     45hrs      |    hrs    |   hrs   |
