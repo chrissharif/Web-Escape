@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       <header>
-        <h1>Web Escape</h1>
+        <h1>Hello</h1>
       </header>
     </div>
   )
