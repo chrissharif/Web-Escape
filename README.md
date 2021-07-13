@@ -100,18 +100,18 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 
 ## SWOT Analysis
 
-###Strengths:
+### Strengths:
 
 Actual JavaScript functionality should be fairly simple. The Puzzles will not be crazy difficult to complete or code in.
 
-###Weaknesses:
+### Weaknesses:
 
 State. I can understand what state is, just actually using it will be a bit tricky for me. I do have resources to use and hope that this project will help me understand this concept better.
 
-###Opportunities:
+### Opportunities:
 
 Learning React completely. I'm still a little fuzzy with React as a whole, so this project should help clear some things up. It's more of the behind the scenes syntax that throws me for a loop.
 
-###Threats:
+### Threats:
 
 The Leaderboard component. It shouldn't be the worst thing in the world, but like I said I still struggle with state a little bit, so having players be able to post on the API using state will be tough for me.
