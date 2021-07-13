@@ -40,7 +40,7 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 
 ## Component Hierarchy
 
-[Component Hierarchy](https://whimsical.com/web-escape-NKty4e5QJpE4SWepNXVKNr)
+[Component Hierarchy](https://whimsical.com/web-escape-hierarchy-BBTNoCb1wCAwrpDmo3SSYi)
 
 ### MVP/PostMVP
 
