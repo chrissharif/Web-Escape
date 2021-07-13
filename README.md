@@ -12,24 +12,37 @@ This escape room based game is a puzzle lover's paradise. With 4 different chall
 
 ## API and Data Sample
 
-[API](https://opentdb.com/api.php?amount=10&category=18&difficulty=easy&type=multiple)
+[Airtable API](https://airtable.com/tblmNSNzW1tn2IdlJ/viwZUeiriOsiwkMVo?blocks=hide)
 
-description
+The Airtable API I made will be used for the Leaderboards page. Players will be able to post their results after completing the game and will display it to everyone. Their post will include their name, time, rank, and the date of completion.
 
 ```json
 
+{
+    "fields": {
+      "name": "Chris",
+      "time": 34920,
+      "rank": "1",
+      "date": "2021-07-13"
+    }
+  },
+  
 ```
 
 ## Wireframes
 
 [Wireframe](https://wireframe.cc/9C0t7E)
 
+## Component Hierarchy
+
+[Component Hierarchy](https://wireframe.cc/2gj4Ut)
+
 ### MVP/PostMVP
 
 #### MVP
 
 - Create a play button
-- Have a navbar to display each of the puzzles
+- Have a navigation bar to display each of the puzzles
 - Add win screen and lose screen
 - Have four different puzzles
 - Include a leaderboard for players to post their time and name in
@@ -47,52 +60,58 @@ description
 
 | Day     | Deliverable                                                     | Status   |
 | ------- | --------------------------------------------------------------- | -------- |
-| July 13 | Prompt / Wireframes / Priority Matrix / Timeframes              | Incomplete |
+| July 13 | Prepare for Project Pitch / Project Approval                    | Incomplete |
 | July 14 | Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete |
-| July 15 | JavaScript + Functionality                                      | Incomplete |
-| July 16 | Finish JavaScript / CSS for Appearance                          | Incomplete |
+| July 15 | Work on all things JavaScript + React                           | Incomplete |
+| July 16 | Finish Functionality / CSS for Appearance                       | Incomplete |
 | July 19 | MVP/PMVP / Final Functionality Check                            | Incomplete |
 | July 20 | Presentations                                                   | Incomplete |
-
-## Priority Matrix
-
-[Priority Matrix](https://wireframe.cc/17I3Cw)
 
 ## Timeframes
 
 | Component                                   | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic HTML                                  |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
-| Basic CSS to Define Page Elements           |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
-| Adding API to JavaScript                    |    H     |      1hrs      |     1hrs      |    1hrs     |
-| Creating Start Game Button                  |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
-| Start Coding Main Functionaliy w/ API       |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Add Event Listeners                         |    H     |      1hrs      |     2hrs      |    2hrs     |
-| Create Elements and Append to DOM           |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Add Question and Answer Elements            |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Make Answer Elements Functional             |    H     |      3hrs      |     2hrs      |    2hrs     |
-| Style Question and Answer Elements          |    M     |      2hrs      |     1hrs      |    1hrs     |
-| Remove Elements after Question is Answered  |    H     |      1hrs      |     2hrs      |    2hrs     |
-| Make Sure Game is Functionable + Debugging  |    H     |      2hrs      |     4hrs      |    4hrs     |
-| Create Answer Counter and Make Functionable |    M     |      2hrs      |     1hrs      |    1hrs     |
-| Add Answer Counters to Each Question        |    M     |      2hrs      |     1hrs      |    1hrs     |
-| Add Win or Lose Message                     |    H     |      1hrs      |     1hrs      |    1hrs     |
-| Flexbox with All Elements                   |    H     |      1hrs      |     1hrs      |    1hrs     |
-| Finish Styling Webpage                      |    H     |      2hrs      |     2hrs      |    2hrs     |
-| Review of Functionality and Design          |    H     |      1hrs      |     2hrs      |    2hrs     |
-| PMVP Styling                                |    L     |      3hrs      |     5hrs      |    5hrs     |
-| Final Review                                |    H     |      1hrs      |     2hrs      |    2hrs     |
-| Total                                       |    H     |     33hrs      |    34.5hrs    |   34.5hrs   |
+| Basic React                                 |    H     |      1hrs      |    hrs     |   hrs    |
+| Add in Components and React Router          |    H     |      1hrs      |    hrs     |   hrs    |
+| Basic JSX for Each Component                |    H     |      1hrs      |     hrs      |    hrs     |
+| Work on Home Page Component                 |    H     |      2hrs      |    hrs     |   hrs    |
+| Add in Play Game Button                     |    H     |      1hrs      |     hrs      |    hrs     |
+| Add Event Listeners + Timer                 |    H     |      1hrs      |     hrs      |    hrs     |
+| Add in Navigation Bar + Leaderboards Button |    H     |      2hrs      |     hrs      |    hrs     |
+| Start First Puzzle                          |    H     |      2hrs      |     hrs      |    hrs     |
+| Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
+| Add Submit Button for First Puzzle          |    M     |      1hrs      |     hrs      |    hrs     |
+| Start Second Puzzle                         |    H     |      2hrs      |     hrs      |    hrs     |
+| Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
+| Add Submit Button for Second Puzzle         |    M     |      1hrs      |     hrs      |    hrs     |
+| Start Third Puzzle                          |    M     |      2hrs      |     hrs      |    hrs     |
+| Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
+| Add Submit Button for Third Puzzle          |    H     |      1hrs      |     hrs      |    hrs     |
+| Start Fourth Puzzle                         |    H     |      2hrs      |     hrs      |    hrs     |
+| Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
+| Add Submit Button for Fourth Puzzle         |    L     |      1hrs      |     hrs      |    hrs     |
+| Add Win or Lose Screen                      |    H     |      2hrs      |     hrs      |    hrs     |
+| Work on Leaderboards Component              |    H     |      3hrs      |     hrs      |    hrs     |
+| Allow Player to Post on Leaderboards        |    H     |      2hrs      |     hrs      |    hrs     |
+| Finish Up Functionality + Debugging         |    H     |      2hrs      |     hrs      |    hrs     |
+| PMVP Styling                                |    H     |      5hrs      |     hrs      |    hrs     |
+| Final Review                                |    H     |      1hrs      |     hrs      |    hrs     |
+| Total                                       |    H     |     45hrs      |    hrs    |   hrs   |
 
-## Code Snippet
+## SWOT Analysis
 
-The API used included questions with imbedded HTML styling. Since JavaScript was used for the actual game, the styling showed up in a string instead of actually styling the words. Adding this code allowed the content of the elements to apply that HTML styling within JavaScript.
+###Strengths:
 
-```
-currentQuestion.textContent = decodeURIComponent(questionData[i].question)
+Actual JavaScript functionality should be fairly simple. The Puzzles will not be crazy difficult to complete or code in.
 
-answerDiv.textContent = decodeURIComponent(answer)
+###Weaknesses:
 
-```
+State. I can understand what state is, just actually using it will be a bit tricky for me. I do have resources to use and hope that this project will help me understand this concept better.
 
-## Change Log
+###Opportunities:
+
+Learning React completely. I'm still a little fuzzy with React as a whole, so this project should help clear some things up. It's more of the behind the scenes syntax that throws me for a loop.
+
+###Threats:
+
+The Leaderboard component. It shouldn't be the worst thing in the world, but like I said I still struggle with state a little bit, so having players be able to post on the API using state will be tough for me.
