@@ -85,21 +85,21 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 | Add in Navigation Bar + Leaderboards Button |    H     |      2hrs      |     hrs      |    hrs     |
 | Start First Puzzle                          |    H     |      2hrs      |     hrs      |    hrs     |
 | Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
-| Add Submit Button for First Puzzle          |    M     |      1hrs      |     hrs      |    hrs     |
+| Add Submit Button for First Puzzle          |    H     |      1hrs      |     hrs      |    hrs     |
 | Start Second Puzzle                         |    H     |      2hrs      |     hrs      |    hrs     |
 | Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
-| Add Submit Button for Second Puzzle         |    M     |      1hrs      |     hrs      |    hrs     |
-| Start Third Puzzle                          |    M     |      2hrs      |     hrs      |    hrs     |
+| Add Submit Button for Second Puzzle         |    H     |      1hrs      |     hrs      |    hrs     |
+| Start Third Puzzle                          |    H     |      2hrs      |     hrs      |    hrs     |
 | Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
 | Add Submit Button for Third Puzzle          |    H     |      1hrs      |     hrs      |    hrs     |
 | Start Fourth Puzzle                         |    H     |      2hrs      |     hrs      |    hrs     |
 | Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
-| Add Submit Button for Fourth Puzzle         |    L     |      1hrs      |     hrs      |    hrs     |
+| Add Submit Button for Fourth Puzzle         |    H     |      1hrs      |     hrs      |    hrs     |
 | Add Win or Lose Screen                      |    H     |      2hrs      |     hrs      |    hrs     |
 | Work on Leaderboards Component              |    H     |      3hrs      |     hrs      |    hrs     |
 | Allow Player to Post on Leaderboards        |    H     |      2hrs      |     hrs      |    hrs     |
 | Finish Up Functionality + Debugging         |    H     |      4hrs      |     hrs      |    hrs     |
-| PMVP Styling                                |    H     |      5hrs      |     hrs      |    hrs     |
+| PMVP Styling                                |    L     |      5hrs      |     hrs      |    hrs     |
 | Final Review                                |    H     |      1hrs      |     hrs      |    hrs     |
 | Total                                       |    H     |     45hrs      |    hrs    |   hrs   |
 
