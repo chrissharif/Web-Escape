@@ -1,0 +1,48 @@
+.base {
+  background-color: turquoise;
+  width: 210px;
+  height: 100px;
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+  /* top: 100px; */
+  padding: 100px 0px 10px 10px;
+  /* right: 450px; */
+}
+
+.lock-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: black;
+  position: relative;
+  bottom: 45px;
+  left: 75px;
+}
+
+.lock-bottom {
+  width: 30px;
+  height: 80px;
+  background-color: black;
+  position: relative;
+  bottom: 85px;
+  left: 85px;
+}
+
+.lock-semicircle {
+  width: 100px;
+  height: 100px;
+  border: 50px solid turquoise;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 115px;
+  left: 10px;
+}
+
+.locks {
+  display: flex;
+  justify-content: center;
+}
