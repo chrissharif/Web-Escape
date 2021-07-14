@@ -10,10 +10,12 @@ function Puzzle1(props) {
   async function onSubmit(e) {
     e.preventDefault()
     if (answer === 893) {
-      console.log('correct')
       props.setAnswer1(true)
+      let input = document.querySelector('input')
+      input.style.backgroundColor = 'lime'
     } else {
-      console.log('nope')
+      let input = document.querySelector('input')
+      input.style.backgroundColor = 'red'
     }
   }
 
@@ -25,6 +27,12 @@ function Puzzle1(props) {
           <button>Home</button>
         </Link>
       </nav>
+
+      <div>
+        <p>The answer to this puzzle is a three digit code.
+          Use the riddles below to determine the three
+        numbers and unlock the first lock.</p>
+      </div>
 
       <div className='num-box-container'>
         <div className='three-num-box'>
