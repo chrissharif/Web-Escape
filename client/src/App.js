@@ -2,6 +2,11 @@ import './App.css';
 import React from 'react'
 import { Route, Link } from 'react-router-dom'
 import Home from './components/Home'
+// import Leaderboard from './components/Leaderboard'
+// import Puzzle1 from './components/Puzzle1'
+// import Puzzle2 from './components/Puzzle2'
+// import Puzzle3 from './components/Puzzle3'
+// import Puzzle4 from './components/Puzzle4'
 
 function App() {
 
@@ -24,6 +29,40 @@ function App() {
       <Route exact path='/home'>
         <Home />
       </Route>
+      {/* <Link to='/leaderboard'>
+        <button>Leaderboard</button>
+      </Link>
+      <Route exact path='/leaderboard'>
+        <Leaderboard />
+      </Route>
+        
+      <Link to='/puzzle1'>
+        <button>Puzzle 1</button>
+      </Link>
+      <Route exact path='/puzzle1'>
+        <Puzzle1 />
+      </Route>
+        
+      <Link to='/puzzle2'>
+        <button>Puzzle 2</button>
+      </Link>
+      <Route exact path='/puzzle2'>
+        <Puzzle2 />
+      </Route>
+        
+      <Link to='/puzzle3'>
+        <button>Puzzle 3</button>
+      </Link>
+      <Route exact path='/puzzle3'>
+        <Puzzle3 />
+      </Route>
+        
+      <Link to='/puzzle4'>
+        <button>Puzzle 4</button>
+      </Link>
+      <Route exact path='/puzzle4'>
+        <Puzzle4 />
+      </Route> */}
     </div>
   );
 }
