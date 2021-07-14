@@ -2,7 +2,12 @@ import './Home.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Home() {
+function Home(props) {
+
+  let correct = 'lock-semicircle unlock'
+  let lock = 'lock-semicircle'
+
+
   return (
     <div>
       <header>
@@ -31,7 +36,7 @@ function Home() {
       <div className='locks'>
 
       <div className='lock'>
-        <div className='lock-semicircle unlock'></div>
+        <div className={props.answer1 ? correct : lock}></div>
         <div className='base'>
           <div className='lock-top'></div>
           <div className='lock-bottom'></div>

@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react'
+import React, {useState} from 'react'
 import { Route, Link } from 'react-router-dom'
 import Home from './components/Home'
 import Leaderboard from './components/Leaderboard'
@@ -9,6 +9,8 @@ import Puzzle3 from './components/Puzzle3'
 import Puzzle4 from './components/Puzzle4'
 
 function App() {
+
+  const [answer1, setAnswer1] = useState(false)
 
   return (
     <div>
@@ -31,7 +33,7 @@ function App() {
       </Route>
       
       <Route exact path='/home'>
-        <Home />
+        <Home answer1={answer1}/>
       </Route>
       
       <Route exact path='/leaderboard'>
@@ -39,7 +41,7 @@ function App() {
       </Route>
         
       <Route exact path='/puzzle1'>
-        <Puzzle1 />
+        <Puzzle1 setAnswer1={setAnswer1}/>
       </Route>
         
       <Route exact path='/puzzle2'>
