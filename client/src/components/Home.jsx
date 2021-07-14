@@ -29,13 +29,39 @@ function Home() {
       </nav>
 
       <div className='locks'>
+
       <div className='lock'>
+        <div className='lock-semicircle unlock'></div>
+        <div className='base'>
+          <div className='lock-top'></div>
+          <div className='lock-bottom'></div>
+        </div>
+        </div>
+        
+        <div className='lock'>
         <div className='lock-semicircle'></div>
         <div className='base'>
           <div className='lock-top'></div>
           <div className='lock-bottom'></div>
         </div>
-      </div>
+        </div>
+        
+        <div className='lock'>
+        <div className='lock-semicircle'></div>
+        <div className='base'>
+          <div className='lock-top'></div>
+          <div className='lock-bottom'></div>
+        </div>
+        </div>
+        
+        <div className='lock'>
+        <div className='lock-semicircle'></div>
+        <div className='base'>
+          <div className='lock-top'></div>
+          <div className='lock-bottom'></div>
+        </div>
+        </div>
+        
       </div>
 
     </div>

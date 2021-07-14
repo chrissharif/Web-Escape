@@ -1,3 +1,5 @@
+/* Lock made possible with help from https://codepen.io/matthewjmoran/pen/dXdYbN */
+
 .base {
   background-color: turquoise;
   width: 210px;
@@ -5,9 +7,7 @@
   border-radius: 30px;
   margin: 0 auto;
   position: relative;
-  /* top: 100px; */
   padding: 100px 0px 10px 10px;
-  /* right: 450px; */
 }
 
 .lock-top {
@@ -40,9 +40,15 @@
   position: relative;
   top: 115px;
   left: 10px;
+  margin: 50px 70px 0px 50px;
 }
 
 .locks {
   display: flex;
   justify-content: center;
+}
+
+.unlock {
+  transform: scaleX(-1);
+  transition: transform 0s linear;
 }
