@@ -36,7 +36,8 @@ function Home(props) {
       <div className='locks'>
 
       <div className='lock'>
-        <div className={props.answer1 ? correct : lock}></div>
+          <div className={props.answer1 ? correct : lock}></div>
+          <div className='number color1'><strong>4</strong></div>
         <div className='base'>
           <div className='lock-top'></div>
           <div className='lock-bottom'></div>
@@ -45,6 +46,7 @@ function Home(props) {
         
         <div className='lock'>
         <div className={props.answer2 ? correct : lock}></div>
+        <div className='number color2'><strong>7</strong></div>
         <div className='base'>
           <div className='lock-top'></div>
           <div className='lock-bottom'></div>
@@ -52,7 +54,8 @@ function Home(props) {
         </div>
         
         <div className='lock'>
-        <div className={props.answer3 ? correct : lock}></div>
+          <div className={props.answer3 ? correct : lock}></div>
+          <div className='number color3'><strong>1</strong></div>
         <div className='base'>
           <div className='lock-top'></div>
           <div className='lock-bottom'></div>
@@ -60,7 +63,8 @@ function Home(props) {
         </div>
         
         <div className='lock'>
-        <div className='lock-semicircle'></div>
+          <div className='lock-semicircle2'></div>
+          <div className='number'></div>
         <div className='base'>
           <div className='lock-top'></div>
           <div className='lock-bottom'></div>

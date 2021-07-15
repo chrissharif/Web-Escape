@@ -1,3 +1,4 @@
+import './Puzzle4.css'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -10,6 +11,14 @@ function Puzzle4() {
           <button>Home</button>
         </Link>
       </nav>
+      
+      <div className='puzzle-container'>
+        <input></input>
+        <input></input>
+        <input></input>
+        <input></input>
+      </div>
+
     </div>
   )
 }

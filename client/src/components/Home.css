@@ -5,7 +5,7 @@
   width: 210px;
   height: 100px;
   border-radius: 30px;
-  margin: 0 auto;
+  margin: -40px auto;
   position: relative;
   padding: 100px 0px 10px 10px;
 }
@@ -40,15 +40,51 @@
   position: relative;
   top: 115px;
   left: 10px;
-  margin: 50px 70px 0px 50px;
+  margin: 50px 70px -30px 50px;
+}
+
+.lock-semicircle2 {
+  width: 100px;
+  height: 100px;
+  border: 50px solid turquoise;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(-45deg);
+  position: relative;
+  top: 115px;
+  left: 10px;
+  margin: 50px 70px -48px 50px;
 }
 
 .locks {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .unlock {
   transform: scaleX(-1);
   transition: transform 0s linear;
+}
+
+.number {
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  margin: 0px 0px 50px 140px;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.color1 {
+  color: blue;
+}
+
+.color2 {
+  color: red;
+}
+
+.color3 {
+  color: green;
 }
