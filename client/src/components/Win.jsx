@@ -11,10 +11,14 @@ function Win() {
           <label>Name</label>
           <input className='new' placeholder='name'></input>
         </div>
-        <label>Time</label>
-        <input className='new' placeholder='time'></input>
-        <label>Date</label>
-        <input className='new' placeholder='date'></input>
+        <div className='line'>
+          <label>Time</label>
+          <input className='new' placeholder='time'></input>
+        </div>
+        <div className='line'>
+          <label>Date</label>
+          <input className='new' placeholder='date'></input>
+        </div>
       </form>
     </div>
   )

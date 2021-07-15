@@ -6,15 +6,6 @@ function Home(props) {
 
   let correct = 'lock-semicircle unlock'
   let lock = 'lock-semicircle'
-  
-  async function onSubmit(e) {
-    e.preventDefault()
-    if (props.answer1 === true && props.answer2 === true && props.answer3 === true && props.answer4 === true) {
-      console.log('good')
-    } else {
-      console.log('bad')
-    }
-  }
 
   function checkForWin() {
     if (props.answer1 === true && props.answer2 === true && props.answer3 === true && props.answer4 === true) {
@@ -23,8 +14,6 @@ function Home(props) {
           <button>Escape the Web!</button>
         </Link>
       )
-    } else {
-      console.log('bad')
     }
   }
 
@@ -92,7 +81,7 @@ function Home(props) {
         </div>
         
       </div>
-      
+
       {checkForWin()}
 
     </div>
