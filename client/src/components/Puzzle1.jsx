@@ -45,7 +45,7 @@ function Puzzle1(props) {
           <div className='num-box'>7</div><div className='num-box'>9</div><div className='num-box'>6</div><div className='text'>One number is correct<br /> and in the correct spot</div>
         </div>
         <div className='three-num-box'>
-          <div className='num-box'>3</div><div className='num-box'>6</div><div className='num-box'>1</div><div className='text'>One number is correct,<br /> but in the wrong spot</div>
+          <div className='num-box'>3</div><div className='num-box'>6</div><div className='num-box secret'>1</div><div className='text'>One number is correct,<br /> but in the wrong spot</div>
         </div>
         <div className='three-num-box'>
           <div className='num-box'>0</div><div className='num-box'>7</div><div className='num-box'>1</div><div className='text'>None of these numbers<br /> are correct</div>
@@ -58,8 +58,7 @@ function Puzzle1(props) {
         <input
           type='number'
           value={answer}
-          onChange={(e) => setAnswer(parseInt(e.target.value))}
-          placeholder='Answer'>
+          onChange={(e) => setAnswer(parseInt(e.target.value))}>
         </input>
         <button>Submit</button>
       </form>

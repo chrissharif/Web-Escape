@@ -63,7 +63,7 @@ function Home(props) {
         </div>
         
         <div className='lock'>
-          <div className='lock-semicircle2'></div>
+          <div className={props.answer4 ? correct : 'lock-semicircle2'}></div>
           <div className='number'></div>
         <div className='base'>
           <div className='lock-top'></div>

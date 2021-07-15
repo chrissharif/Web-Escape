@@ -41,7 +41,7 @@ function Puzzle3(props) {
         <div className='clue'>Sally remembers that the chocolate pudding arrived right after the apple pie was placed on the table.</div>
         <div className='clue'>Sally's cousin May came two people before the last person and brought sangria.</div>
         <div className='clue'>The person who came 3 people after the person who brought the<br /> crumb cake prefers the nickname that comes from the name Anthony.</div>
-        <div className='clue'>The third person who came forgot their food at home.</div>
+        <div className='clue'>The <span className='secret'>third</span> person who came forgot their food at home.</div>
         <div className='clue'>Sally realized the apple pie was at the party before May came.</div>
         <div className='clue'>Before the apple pie arrived, there was a platter of fruit on the table which someone brought.</div>
         <div className='clue'>The twins Harry and Barry came before May. They brought one dessert and one entree.</div>

@@ -40,7 +40,8 @@ function Puzzle2(props) {
         <div className='individual'>
           <div className='square'></div>x
           <div className='circle'></div>
-          <div className='equal-sign'>=</div>16
+          <div className='equal-sign'>=</div>1
+          <div className='secret'>6</div>
         </div>
         <div className='individual'>
           <div className='circle'></div>
@@ -68,8 +69,7 @@ function Puzzle2(props) {
         <input
           type='number'
           value={answer}
-          onChange={(e) => setAnswer(parseInt(e.target.value))}
-          placeholder='Answer'>
+          onChange={(e) => setAnswer(parseInt(e.target.value))}>
         </input>
         <button>Submit</button>
       </form>
