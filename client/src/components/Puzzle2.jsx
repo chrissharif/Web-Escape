@@ -58,7 +58,7 @@ function Puzzle2(props) {
             (<div className='square'></div>
             <div className='equal-sign'>+</div>
             (1/2<div className='circle'></div>))
-            <div className='equal-sign'>=</div>8
+            <div className='equal-sign'>=</div>7
           </div>
         </div>
       </div>

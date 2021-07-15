@@ -32,7 +32,7 @@ function Puzzle4(props) {
         You may have noticed some numbers
         showing up after the locks have been unlocked. Try inputting
         those numbers into this passcode checker. As for the last number,
-        there are some secrets hidden throughout the puzzles. Find them and
+        there are some secrets hidden throughout the first three puzzles. Find them and
         come back to finally excape.
       </div>
 

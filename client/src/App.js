@@ -7,6 +7,7 @@ import Puzzle1 from './components/Puzzle1'
 import Puzzle2 from './components/Puzzle2'
 import Puzzle3 from './components/Puzzle3'
 import Puzzle4 from './components/Puzzle4'
+import Win from './components/Win'
 
 function App() {
 
@@ -57,6 +58,10 @@ function App() {
         
       <Route exact path='/puzzle4'>
         <Puzzle4 setAnswer4={setAnswer4}/>
+      </Route>
+
+      <Route exact path='/win'>
+        <Win />
       </Route>
     </div>
   );

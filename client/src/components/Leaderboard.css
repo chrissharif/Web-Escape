@@ -1,0 +1,41 @@
+.leaderboard {
+  width: 75%;
+  height: auto;
+  background-color: paleturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  border: solid black 3px;
+  border-radius: 30px;
+}
+
+.board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40px;
+  width: auto;
+  margin: 25px 0px 25px 0px;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  border: solid black 3px;
+  border-radius: 30px;
+}
+
+.sample {
+  margin: 25px 100px 25px 100px;
+}
+
+.entry {
+  width: 100px;
+  padding: 10px;
+  margin: 0px 50px 0px 50px;
+}

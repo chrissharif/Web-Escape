@@ -13,6 +13,13 @@
   justify-content: center;
 }
 
+.text {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 50px;
+  font-size: 25px;
+}
+
 .blue {
   color: white;
   background-color: blue;

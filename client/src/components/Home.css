@@ -8,6 +8,7 @@
   margin: -40px auto;
   position: relative;
   padding: 100px 0px 10px 10px;
+  border: solid black 2px;
 }
 
 .lock-top {
@@ -87,4 +88,11 @@
 
 .color3 {
   color: green;
+}
+
+.finish {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
