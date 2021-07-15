@@ -1,5 +1,18 @@
 .text {
   font-size: 25px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin: 50px;
+  margin: 50px 50px 100px 50px;
+}
+
+.clue {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 20px 150px 20px 150px;
+  text-align: center;
+}
+
+.puzzle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

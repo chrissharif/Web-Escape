@@ -36,7 +36,7 @@ function App() {
       </Route>
       
       <Route exact path='/home'>
-        <Home answer1={answer1} answer2={answer2}/>
+        <Home answer1={answer1} answer2={answer2} answer3={answer3}/>
       </Route>
       
       <Route exact path='/leaderboard'>
@@ -52,7 +52,7 @@ function App() {
       </Route>
         
       <Route exact path='/puzzle3'>
-        <Puzzle3 />
+        <Puzzle3 setAnswer3={setAnswer3}/>
       </Route>
         
       <Route exact path='/puzzle4'>
