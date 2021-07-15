@@ -11,6 +11,9 @@ import Puzzle4 from './components/Puzzle4'
 function App() {
 
   const [answer1, setAnswer1] = useState(false)
+  const [answer2, setAnswer2] = useState(false)
+  const [answer3, setAnswer3] = useState(false)
+  const [answer4, setAnswer4] = useState(false)
 
   return (
     <div>
@@ -33,7 +36,7 @@ function App() {
       </Route>
       
       <Route exact path='/home'>
-        <Home answer1={answer1}/>
+        <Home answer1={answer1} answer2={answer2}/>
       </Route>
       
       <Route exact path='/leaderboard'>
@@ -45,7 +48,7 @@ function App() {
       </Route>
         
       <Route exact path='/puzzle2'>
-        <Puzzle2 />
+        <Puzzle2 setAnswer2={setAnswer2}/>
       </Route>
         
       <Route exact path='/puzzle3'>

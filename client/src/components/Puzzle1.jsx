@@ -29,9 +29,9 @@ function Puzzle1(props) {
       </nav>
 
       <div>
-        <p>The answer to this puzzle is a three digit code.
-          Use the riddles below to determine the three
-        numbers and unlock the first lock.</p>
+        <p className='text2'>The <strong>secret code</strong> for this puzzle is made up of three digits.
+          <br />Use the riddles below to determine the three
+        numbers.</p>
       </div>
 
       <div className='num-box-container'>
@@ -51,6 +51,8 @@ function Puzzle1(props) {
           <div className='num-box'>0</div><div className='num-box'>7</div><div className='num-box'>1</div><div className='text'>None of these numbers<br /> are correct</div>
         </div>
       </div>
+
+      <div className='text2'>What is the <strong>secret code</strong>?</div>
 
       <form onSubmit={onSubmit}>
         <input
