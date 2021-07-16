@@ -1,14 +1,34 @@
 import './Leaderboard.css'
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
+
+const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
+const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
+const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/Table%201`
 
 function Leaderboard() {
+  
+    const [post, setPost] = useState([])
+  
+    useEffect(() => {
+      fetchData()
+    }, [])
+  
+    async function fetchData() {
+      const response = await axios.get(URL, {
+        headers: {Authorization: `Bearer ${AIRTABLE_KEY}`}
+      })
+      console.log(response)
+      setPost(response.data.records)
+    }
+
   return (
   <div>
       <h1>Leaderboard</h1>
-      <nav>
+      <nav className='links'>
         <Link to='/'>
-          <button>Back</button>
+          <button className='puzzle-button'>Start Page</button>
         </Link>
       </nav>
 

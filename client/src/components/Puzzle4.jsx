@@ -19,12 +19,28 @@ function Puzzle4(props) {
     }
   }
 
+  if (props.timer === 900) {
+    clearInterval(props.int)
+    return (
+      <div className='page'>
+        <div className='text'>You were not able to Escape the Web!
+          Click the button to try again, but this try you will
+          have unlimited time. Figure out the puzzles and then
+          try again with the timer! Good luck!</div>
+        <Link to='/'>
+          <button className='puzzle-button'>Try Again</button>
+        </Link>
+      </div>
+    )
+  }
+
   return (
-    <div>
+    <div className='page'>
       <h1>Puzzle 4</h1>
-      <nav>
+      <div className='timer'>{props.timer}</div>
+      <nav className='links'>
         <Link to='/home'>
-          <button>Home</button>
+          <button className='puzzle-button'>Home</button>
         </Link>
       </nav>
       
@@ -61,12 +77,13 @@ function Puzzle4(props) {
           value={secret}
           onChange={(e) => setSecret((e.target.value))}>
         </input>
-        <br />
-        <button>Submit</button>
+          <br />
+          <div className='center-form'>
+            <button className='submit'>Submit</button>
+          </div>
         </form>
         
       </div>
-
     </div>
   )
 }

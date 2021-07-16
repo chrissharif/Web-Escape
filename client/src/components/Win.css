@@ -9,5 +9,32 @@
   margin: 50px;
 }
 
-.line {
+.win-text {
+  font-size: 30px;
+}
+
+.leaderboard-button {
+  border: solid rebeccapurple 2px;
+  border-radius: 20px;
+  width: auto;
+  height: 50px;
+  color: salmon;
+  background-color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 20px -20px 20px;
+}
+
+.leaderboard-button:hover {
+  background-color: salmon;
+  color: white;
+}
+
+.name-input {
+  border: solid rebeccapurple 2px;
+  border-radius: 20px;
+  color: salmon;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0px 0px 0px 10px;
 }

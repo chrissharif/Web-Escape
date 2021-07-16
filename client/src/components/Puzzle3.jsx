@@ -18,12 +18,28 @@ function Puzzle3(props) {
     }
   }
 
+  if (props.timer === 900) {
+    clearInterval(props.int)
+    return (
+      <div className='page'>
+        <div className='text'>You were not able to Escape the Web!
+          Click the button to try again, but this try you will
+          have unlimited time. Figure out the puzzles and then
+          try again with the timer! Good luck!</div>
+        <Link to='/'>
+          <button className='puzzle-button'>Try Again</button>
+        </Link>
+      </div>
+    )
+  }
+
   return (
-    <div>
+    <div className='page'>
       <h1>Puzzle 3</h1>
-      <nav>
+      <div className='timer'>{props.timer}</div>
+      <nav className='links'>
         <Link to='/home'>
-          <button>Home</button>
+          <button className='puzzle-button'>Home</button>
         </Link>
       </nav>
 
@@ -48,14 +64,15 @@ function Puzzle3(props) {
         <div className='clue'>A total of 11 people were at the party.</div>
       </div>
 
-      <form onSubmit={onSubmit}>
+      <form className='center-form' onSubmit={onSubmit}>
         <input
+          className='puzzle-input'
           type='text'
           value={answer}
           onChange={(e) => setAnswer((e.target.value))}
           placeholder='Answer'>
         </input>
-        <button>Submit</button>
+        <button className='submit'>Submit</button>
       </form>
     </div>
   )

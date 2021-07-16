@@ -10,34 +10,52 @@ function Home(props) {
   function checkForWin() {
     if (props.answer1 === true && props.answer2 === true && props.answer3 === true && props.answer4 === true) {
       return (
-        <Link className='finish' to='/win'>
-          <button>Escape the Web!</button>
-        </Link>
+        <div className='escape'>
+          <Link className='finish' to='/win'>
+            <button className='puzzle-button'>Escape the Web!</button>
+          </Link>
+        </div>
       )
     }
   }
 
+  if (props.timer === 900) {
+    clearInterval(props.int)
+    return (
+      <div>
+        <div className='text'>You were not able to Escape the Web!
+          Click the button to try again, but this try you will
+          have unlimited time. Figure out the puzzles and then
+          try again with the timer! Good luck!</div>
+        <Link to='/'>
+          <button className='puzzle-button'>Try Again</button>
+        </Link>
+      </div>
+    )
+  }
+  
   return (
-    <div>
+    <div className='body page'>
       <header>
         <h1>Web Escape</h1>
       </header>
-      <nav>
+      <div className='timer'>{props.timer}</div>
+      <nav className='links'>
         
       <Link to='/puzzle1'>
-        <button>Puzzle 1</button>
+        <button className='puzzle-button'>Puzzle 1</button>
       </Link>
       
       <Link to='/puzzle2'>
-        <button>Puzzle 2</button>
+        <button className='puzzle-button'>Puzzle 2</button>
       </Link>
         
       <Link to='/puzzle3'>
-        <button>Puzzle 3</button>
+        <button className='puzzle-button'>Puzzle 3</button>
       </Link>
         
       <Link to='/puzzle4'>
-        <button>Puzzle 4</button>
+        <button className='puzzle-button'>Puzzle 4</button>
       </Link>
         
       </nav>
