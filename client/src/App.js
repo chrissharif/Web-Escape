@@ -33,7 +33,7 @@ function App() {
           <h3>
             How to Play: <br /> <br />There are four locks that you will need
             to unlock by completing four puzzles. After each puzzle is
-            complete, a lock will unlock. Complete all four puzzles
+            complete, a lock will unlock. You have 900 seconds to escape. Complete all four puzzles
             before the timer runs out to win! Can you escape the web?
           </h3>
         </header>

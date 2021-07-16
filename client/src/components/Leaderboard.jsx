@@ -50,10 +50,10 @@ function Leaderboard() {
         </div>
 
         <div className='row'>
-          <div className='entry name'>jerry</div>
-          <div className='entry rank'>2</div>
-          <div className='entry time'>4min</div>
-          <div className='entry date'>today</div>
+            <div className='entry name'>{post.name}</div>
+          <div className='entry rank'></div>
+          <div className='entry time'></div>
+          <div className='entry date'></div>
         </div>
 
       </div>
