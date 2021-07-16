@@ -21,11 +21,9 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 {
     "fields": {
       "name": "Chris",
-      "time": 34920,
-      "rank": "1"
     }
   },
-  
+
 ```
 
 ## Wireframes
@@ -60,48 +58,47 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 - Add animation to the timer when it runs out
 - Have the leaderboard display in order of completion time
 
-
 ## Project Schedule
 
-| Day     | Deliverable                                                     | Status   |
-| ------- | --------------------------------------------------------------- | -------- |
-| July 13 | Prepare for Project Pitch / Project Approval                    | Incomplete |
-| July 14 | Project Approval / Core Application Structure (HTML, CSS, etc.) | Incomplete |
-| July 15 | Work on all things JavaScript + React                           | Incomplete |
-| July 16 | Finish Functionality / CSS for Appearance                       | Incomplete |
+| Day     | Deliverable                                                     | Status     |
+| ------- | --------------------------------------------------------------- | ---------- |
+| July 13 | Prepare for Project Pitch / Project Approval                    | Complete   |
+| July 14 | Project Approval / Core Application Structure (HTML, CSS, etc.) | Complete   |
+| July 15 | Work on all things JavaScript + React                           | Complete   |
+| July 16 | Finish Functionality / CSS for Appearance                       | Complete   |
 | July 19 | MVP/PMVP / Final Functionality Check                            | Incomplete |
 | July 20 | Presentations                                                   | Incomplete |
 
 ## Timeframes
 
-| Component                                   | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Basic React                                 |    H     |      1hrs      |    hrs     |   hrs    |
-| Add in Components and React Router          |    H     |      1hrs      |    hrs     |   hrs    |
-| Basic JSX for Each Component                |    H     |      1hrs      |     hrs      |    hrs     |
-| Work on Home Page Component                 |    H     |      2hrs      |    hrs     |   hrs    |
-| Add in Play Game Button                     |    H     |      1hrs      |     hrs      |    hrs     |
-| Add Event Listeners + Timer                 |    H     |      1hrs      |     hrs      |    hrs     |
-| Add in Navigation Bar + Leaderboards Button |    H     |      2hrs      |     hrs      |    hrs     |
-| Start First Puzzle                          |    H     |      2hrs      |     hrs      |    hrs     |
-| Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
-| Add Submit Button for First Puzzle          |    H     |      1hrs      |     hrs      |    hrs     |
-| Start Second Puzzle                         |    H     |      2hrs      |     hrs      |    hrs     |
-| Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
-| Add Submit Button for Second Puzzle         |    H     |      1hrs      |     hrs      |    hrs     |
-| Start Third Puzzle                          |    H     |      2hrs      |     hrs      |    hrs     |
-| Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
-| Add Submit Button for Third Puzzle          |    H     |      1hrs      |     hrs      |    hrs     |
-| Start Fourth Puzzle                         |    H     |      2hrs      |     hrs      |    hrs     |
-| Add Functionality between Puzzle + Home Page|    H     |      2hrs      |     hrs      |    hrs     |
-| Add Submit Button for Fourth Puzzle         |    H     |      1hrs      |     hrs      |    hrs     |
-| Add Win or Lose Screen                      |    H     |      2hrs      |     hrs      |    hrs     |
-| Work on Leaderboards Component              |    H     |      3hrs      |     hrs      |    hrs     |
-| Allow Player to Post on Leaderboards        |    H     |      2hrs      |     hrs      |    hrs     |
-| Finish Up Functionality + Debugging         |    H     |      4hrs      |     hrs      |    hrs     |
-| PMVP Styling                                |    L     |      5hrs      |     hrs      |    hrs     |
-| Final Review                                |    H     |      1hrs      |     hrs      |    hrs     |
-| Total                                       |    H     |     45hrs      |    hrs    |   hrs   |
+| Component                                    | Priority | Estimated Time | Time Invested | Actual Time |
+| -------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Basic React                                  |    H     |      1hrs      |     2hrs      |    2hrs     |
+| Add in Components and React Router           |    H     |      1hrs      |     2hrs      |    2hrs     |
+| Basic JSX for Each Component                 |    H     |      1hrs      |     1hrs      |    1hrs     |
+| Work on Home Page Component                  |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add in Play Game Button                      |    H     |      1hrs      |     1hrs      |    1hrs     |
+| Add Event Listeners + Timer                  |    H     |      1hrs      |     3hrs      |    3hrs     |
+| Add in Navigation Bar + Leaderboards Button  |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Start First Puzzle                           |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add Functionality between Puzzle + Home Page |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add Submit Button for First Puzzle           |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
+| Start Second Puzzle                          |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add Functionality between Puzzle + Home Page |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add Submit Button for Second Puzzle          |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
+| Start Third Puzzle                           |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add Functionality between Puzzle + Home Page |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add Submit Button for Third Puzzle           |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
+| Start Fourth Puzzle                          |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Add Functionality between Puzzle + Home Page |    H     |      2hrs      |     1hrs      |    1hrs     |
+| Add Submit Button for Fourth Puzzle          |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
+| Add Win or Lose Screen                       |    H     |      2hrs      |     3hrs      |    3hrs     |
+| Work on Leaderboards Component               |    H     |      3hrs      |      hrs      |     hrs     |
+| Allow Player to Post on Leaderboards         |    H     |      2hrs      |      hrs      |     hrs     |
+| Finish Up Functionality + Debugging          |    H     |      4hrs      |      hrs      |     hrs     |
+| PMVP Styling                                 |    L     |      5hrs      |      hrs      |     hrs     |
+| Final Review                                 |    H     |      1hrs      |      hrs      |     hrs     |
+| Total                                        |    H     |     45hrs      |      hrs      |     hrs     |
 
 ## SWOT Analysis
 
