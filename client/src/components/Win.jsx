@@ -2,6 +2,9 @@ import './Win.css'
 import React from 'react'
 
 function Win() {
+
+  
+
   return (
     <div>
       <div className='text'>You escaped! You finished in (time).<br />
