@@ -16,7 +16,6 @@ function Leaderboard(props) {
   let posts = []
   for (let i = 0; i < post.length; i++) {
     posts.push(post[i].fields)
-  
   }
   
     useEffect(() => {
