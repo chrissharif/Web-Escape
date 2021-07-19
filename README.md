@@ -1,6 +1,6 @@
 # Web-Escape
 
-link
+https://vigorous-shockley-666855.netlify.app
 
 ## Project Name
 
@@ -21,6 +21,7 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 {
     "fields": {
       "name": "Chris",
+      "time": 900
     }
   },
 
@@ -66,7 +67,7 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 | July 14 | Project Approval / Core Application Structure (HTML, CSS, etc.) | Complete   |
 | July 15 | Work on all things JavaScript + React                           | Complete   |
 | July 16 | Finish Functionality / CSS for Appearance                       | Complete   |
-| July 19 | MVP/PMVP / Final Functionality Check                            | Incomplete |
+| July 19 | MVP/PMVP / Final Functionality Check                            | Complete   |
 | July 20 | Presentations                                                   | Incomplete |
 
 ## Timeframes
@@ -93,12 +94,12 @@ The Airtable API I made will be used for the Leaderboards page. Players will be 
 | Add Functionality between Puzzle + Home Page |    H     |      2hrs      |     1hrs      |    1hrs     |
 | Add Submit Button for Fourth Puzzle          |    H     |      1hrs      |    0.5hrs     |   0.5hrs    |
 | Add Win or Lose Screen                       |    H     |      2hrs      |     3hrs      |    3hrs     |
-| Work on Leaderboards Component               |    H     |      3hrs      |      hrs      |     hrs     |
-| Allow Player to Post on Leaderboards         |    H     |      2hrs      |      hrs      |     hrs     |
-| Finish Up Functionality + Debugging          |    H     |      4hrs      |      hrs      |     hrs     |
-| PMVP Styling                                 |    L     |      5hrs      |      hrs      |     hrs     |
-| Final Review                                 |    H     |      1hrs      |      hrs      |     hrs     |
-| Total                                        |    H     |     45hrs      |      hrs      |     hrs     |
+| Work on Leaderboards Component               |    H     |      3hrs      |     5hrs      |    5hrs     |
+| Allow Player to Post on Leaderboards         |    H     |      2hrs      |     3hrs      |    3hrs     |
+| Finish Up Functionality + Debugging          |    H     |      4hrs      |     6hrs      |    6hrs     |
+| PMVP Styling                                 |    L     |      5hrs      |     5hrs      |    5hrs     |
+| Final Review                                 |    H     |      1hrs      |     2hrs      |    2hrs     |
+| Total                                        |    H     |     45hrs      |     55hrs     |    55hrs    |
 
 ## SWOT Analysis
 
