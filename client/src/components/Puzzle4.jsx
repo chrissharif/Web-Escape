@@ -12,10 +12,16 @@ function Puzzle4(props) {
   async function onSubmit(e) {
     e.preventDefault()
     if (answer1 === '4' && answer2 === '7' && answer3 === '1' && secret === '163') {
-      console.log('correct')
       props.setAnswer4(true)
+      let input = document.querySelectorAll('input')
+      for (let i = 0; i < input.length; i++) {
+        input[i].style.backgroundColor = 'lime'
+      }
     } else {
-      console.log('nope')
+      let input = document.querySelectorAll('input')
+      for (let i = 0; i < input.length; i++) {
+        input[i].style.backgroundColor = 'red'
+      }
     }
   }
 

@@ -7,29 +7,36 @@ const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
 const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/Table%201`
 
-function Leaderboard(props) {
+function Leaderboard() {
   
-  const [post, setPost] = useState('')
-  
-  let ranks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  const [posts, setPosts] = useState([])
 
-  let posts = []
-  for (let i = 0; i < post.length; i++) {
-    posts.push(post[i].fields)
+  let rank = 1
+
+  const formatDate = (string) => {
+    let options = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric'
+    };
+    return new Date(string).toLocaleDateString([], options);
+  };
+  
+  useEffect(() => {
+    fetchData()
+  }, [])
+  
+  async function fetchData() {
+    const response = await axios.get(URL, {
+      headers: {Authorization: `Bearer ${AIRTABLE_KEY}`}
+    })
+    const sortedData = response.data.records.sort((a, b) => {
+      return a.fields.time - b.fields.time
+    })
+    setPosts(sortedData)
   }
-  
-    useEffect(() => {
-      fetchData()
-    }, [])
-  
-    async function fetchData() {
-      const response = await axios.get(URL, {
-        headers: {Authorization: `Bearer ${AIRTABLE_KEY}`}
-      })
-      // console.log(response.data.records)
-      setPost(response.data.records)
-      console.log(post)
-    }
 
   return (
   <div>
@@ -49,22 +56,15 @@ function Leaderboard(props) {
           <div className='sample'>Time</div>
           <div className='sample'>Date</div>
         </div>
-          
-        <div className='row'>
-          <div className='entry name'>{post[0].fields.name}</div>
-          <div className='entry rank'>{ranks[0]}</div>
-          <div className='entry time'>{post[0].fields.time}</div>
-          <div className='entry date'>{post[0].createdTime.substr(0, 10)}</div>
+          {posts.map((post) => (
+            <div key={post.id} className='row'>
+              <div className='entry name'>{post.fields.name}</div>
+              <div className='entry rank'>{rank++}</div>
+              <div className='entry time'>{post.fields.time}</div>
+              <div className='entry date'>{formatDate(post.createdTime)}</div>
+            </div>
+          ))}
         </div>
-
-        <div className='row'>
-          <div className='entry name'>{post[7].fields.name}</div>
-          <div className='entry rank'>{ranks[1]}</div>
-          <div className='entry time'>{post[7].fields.time}</div>
-          <div className='entry date'>{post[7].createdTime.substr(0, 10)}</div>
-        </div>
-
-      </div>
       </div>
 
   </div>

@@ -23,13 +23,13 @@ function Home(props) {
     clearInterval(props.int)
     return (
       <div>
-        <div className='text'>You were not able to Escape the Web!
-          Click the button to try again, but this try you will
-          have unlimited time. Figure out the puzzles and then
-          try again with the timer! Good luck!</div>
-        <Link to='/'>
-          <button className='puzzle-button'>Try Again</button>
-        </Link>
+        <div className='lose'>Oh no! Time ran out and you were not able to Escape the Web!
+          Click the button to return to the main page, refresh the page and try again. Good luck!</div>
+        <nav className='links'>
+          <Link to='/'>
+            <button className='lose-button'>Try Again</button>
+          </Link>
+        </nav>
       </div>
     )
   }

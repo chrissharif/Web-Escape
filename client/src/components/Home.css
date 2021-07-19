@@ -117,3 +117,29 @@
   right: 10px;
   z-index: 5;
 }
+
+.lose {
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0px 0px 0px 25px;
+  color: rebeccapurple;
+  padding: 100px;
+  text-align: center;
+}
+
+.lose-button {
+  border: solid rebeccapurple 2px;
+  border-radius: 20px;
+  width: auto;
+  height: 50px;
+  color: salmon;
+  background-color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 20px -20px 20px;
+}
+
+.lose-button:hover {
+  background-color: salmon;
+  color: white;
+}
