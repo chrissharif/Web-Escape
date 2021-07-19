@@ -7,9 +7,17 @@ const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE
 const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/Table%201`
 
-function Leaderboard() {
+function Leaderboard(props) {
   
-    const [post, setPost] = useState([])
+  const [post, setPost] = useState('')
+  
+  let ranks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  let posts = []
+  for (let i = 0; i < post.length; i++) {
+    posts.push(post[i].fields)
+  
+  }
   
     useEffect(() => {
       fetchData()
@@ -19,8 +27,9 @@ function Leaderboard() {
       const response = await axios.get(URL, {
         headers: {Authorization: `Bearer ${AIRTABLE_KEY}`}
       })
-      console.log(response)
+      // console.log(response.data.records)
       setPost(response.data.records)
+      console.log(post)
     }
 
   return (
@@ -43,17 +52,17 @@ function Leaderboard() {
         </div>
           
         <div className='row'>
-          <div className='entry name'>chris</div>
-          <div className='entry rank'>1</div>
-          <div className='entry time'>3min</div>
-          <div className='entry date'>today</div>
+          <div className='entry name'>{post[0].fields.name}</div>
+          <div className='entry rank'>{ranks[0]}</div>
+          <div className='entry time'>{post[0].fields.time}</div>
+          <div className='entry date'>{post[0].createdTime.substr(0, 10)}</div>
         </div>
 
         <div className='row'>
-            <div className='entry name'>{post.name}</div>
-          <div className='entry rank'></div>
-          <div className='entry time'></div>
-          <div className='entry date'></div>
+          <div className='entry name'>{post[7].fields.name}</div>
+          <div className='entry rank'>{ranks[1]}</div>
+          <div className='entry time'>{post[7].fields.time}</div>
+          <div className='entry date'>{post[7].createdTime.substr(0, 10)}</div>
         </div>
 
       </div>

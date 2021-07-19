@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { Route, Link } from 'react-router-dom'
 import Home from './components/Home'
 import Leaderboard from './components/Leaderboard'
@@ -52,7 +52,7 @@ function App() {
       </Route>
       
       <Route exact path='/leaderboard'>
-        <Leaderboard />
+        <Leaderboard int={int}/>
       </Route>
         
       <Route exact path='/puzzle1'>
