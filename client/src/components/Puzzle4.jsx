@@ -60,35 +60,36 @@ function Puzzle4(props) {
 
       <div className='puzzle-container'>
         <form onSubmit={onSubmit}>
-        <input className='input blue'
-          type='text'
-          value={answer1}
-          onChange={(e) => setAnswer1((e.target.value))}>
-        </input>
+          <div className='puzzle-container'>
+            <input className='input blue'
+              type='text'
+              value={answer1}
+              onChange={(e) => setAnswer1((e.target.value))}>
+            </input>
         
-        <input className='input red'
-          type='text'
-          value={answer2}
-          onChange={(e) => setAnswer2((e.target.value))}>
-        </input>
+            <input className='input red'
+              type='text'
+              value={answer2}
+              onChange={(e) => setAnswer2((e.target.value))}>
+            </input>
         
-        <input className='input green'
-          type='text'
-          value={answer3}
-          onChange={(e) => setAnswer3((e.target.value))}>
-        </input>
+            <input className='input green'
+              type='text'
+              value={answer3}
+              onChange={(e) => setAnswer3((e.target.value))}>
+            </input>
         
-        <input className='input secret-input'
-          type='text'
-          value={secret}
-          onChange={(e) => setSecret((e.target.value))}>
-        </input>
+            <input className='input secret-input'
+              type='text'
+              value={secret}
+              onChange={(e) => setSecret((e.target.value))}>
+            </input>
+          </div>
           <br />
           <div className='center-form'>
             <button className='submit'>Submit</button>
           </div>
         </form>
-        
       </div>
     </div>
   )

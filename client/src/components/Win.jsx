@@ -16,20 +16,23 @@ function Win(props) {
   useEffect(() => {
     setTime(props.timer)
     clearInterval(props.int)
-  }, [])
+  }, [props.timer, props.int])
 
   async function handleSubmit(e) {
     e.preventDefault()
-    const fields = {
-      name,
-      time
+    if (name.length < 1) {
+      alert('Please enter a value')
+    } else {
+      const fields = {
+        name,
+        time
+      }
+      await axios.post(URL,
+        { fields }, 
+        {headers: {Authorization: `Bearer ${AIRTABLE_KEY}`}
+      })
+      history.push(`/leaderboard`)
     }
-    const response = await axios.post(URL,
-      { fields }, 
-      {headers: {Authorization: `Bearer ${AIRTABLE_KEY}`}
-    })
-    console.log(response)
-    history.push(`/leaderboard`)
   }
 
   return (
@@ -44,6 +47,7 @@ function Win(props) {
             type='text'
             value={name}
             onChange={(e) => setName(e.target.value)}
+            maxLength={12}
             placeholder='name'>
           </input>
         </div>
